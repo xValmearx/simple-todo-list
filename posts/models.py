@@ -6,3 +6,7 @@ class Post(models.Model):
 
     """text is the column in the data base"""
     text = models.TextField()
+
+    def __str__(self):
+        """string method"""
+        return str(self.text)[:50]
