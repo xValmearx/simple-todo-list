@@ -1,6 +1,9 @@
 from django.db import models
 
 
+# this model is how the data base will use the information aka the model, this model will create post on a webpage
+
+
 class Post(models.Model):
     """Post model"""
 

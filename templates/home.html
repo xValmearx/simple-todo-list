@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+<h1>Message Board HomePage</h1>
+{% endblock title %}
+
+{% block contnet %}
+  <h1>Message Board HomePage</h1>
+
+  <ul>
+    {%for post in post_list%}
+    <li>{{post.text}}</li>
+    {% endfor %}
+  </ul>
+
+{% endblock contnet %}
+
